@@ -1,0 +1,152 @@
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f9fa;
+  overflow-x: hidden;
+}
+
+.about-header {
+  height: 30vh;
+  position: relative;
+  background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
+}
+
+.about-3d-title {
+  width: 100%;
+  height: 100%;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(45deg, #4361ee, #64ffda);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #0a192f;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+.tech-stack {
+  margin-top: 3rem;
+}
+
+.tech-stack h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0a192f;
+  text-align: center;
+}
+
+.tech-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: translateY(-10px);
+}
+
+.icon-placeholder {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4361ee;
+  font-size: 2rem;
+}
+
+.tech-icon span {
+  font-weight: 600;
+  color: #0a192f;
+}
+.profile-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 1rem 0;
+}
+
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  color: #4361ee;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+  color: #4cc9f0;
+}
+
+.tech-icon span {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
