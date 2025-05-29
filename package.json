@@ -1,9 +1,12 @@
 {
-  "name": "react_repo",
+  "name": "portfolio",
+  "homepage": "htthttps://saimounik07.github.io/myportfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
