@@ -7,6 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const [name,setName]=useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,8 +24,9 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
+  const path=location.pathname==='/';
   useEffect(() => {
+    path? setName(false):setName(true);
     // Close mobile menu when route changes
     setIsOpen(false);
   }, [location]);
@@ -50,7 +52,12 @@ const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="logo-text">Sai Mounik</span>
+            {name && (
+                <span className="logo-text">
+                  Sai Mounik<br/>
+               </span>
+            )}
+            {/* <span className="logo-text">Sai Mounik</span> */}
           </motion.div>
         </Link>
 
